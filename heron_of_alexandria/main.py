@@ -3,8 +3,12 @@ import logic
 from tkinter import messagebox
     
 def show_dialog():
-  area = logic.area_of_triangle(int(base_entry.get()),int(height_entry.get()))
-  messagebox.showinfo("Area",f"The Area of the Triangle is {area} units.")
+  alphabet = "abcdefghijklmnopqrstuvwxyz"
+  if base_entry.get().lower or height_entry.get().lower in alphabet:
+    messagebox.showerror("Error", "Input not in integers.")
+  else:
+    area = logic.area_of_triangle(int(base_entry.get()),int(height_entry.get()))
+    messagebox.showinfo("Area",f"The Area of the Triangle is {area} units.")
   
 mw = tkinter.Tk() #initialize main window
 
