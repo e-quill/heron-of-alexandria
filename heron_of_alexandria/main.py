@@ -1,8 +1,9 @@
 import tkinter 
+import logic
 from tkinter import messagebox
     
 def show_dialog():
-  area = int(1/2 * int(base_entry.get()) * int(height_entry.get()))
+  area = logic.area_of_triangle(int(base_entry.get()),int(height_entry.get()))
   messagebox.showinfo("Area",f"The Area of the Triangle is {area} units.")
   
 mw = tkinter.Tk() #initialize main window
@@ -26,8 +27,5 @@ base_entry.grid(row=0, column=1, pady=(150,10))
 height_entry.grid(row=1, column=1)
 
 calculate_button = tkinter.Button(mw, text='Calculate Area', command=show_dialog).grid(row=3, column=1, sticky=tkinter.W, pady=4)
-
-
-
 
 mw.mainloop()
