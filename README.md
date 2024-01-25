@@ -1,1 +1,1 @@
-thank god
+This project calculates the area of a triangle given its base and height.
