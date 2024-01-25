@@ -13,7 +13,7 @@ def show_dialog():
         messagebox.showinfo("Area",f"The Area of the Triangle is {area} units.")
         clear()
     else:
-        messagebox.showerror("Area", "Invalid input.")
+        messagebox.showerror("Error", "Invalid input.")
   
 mw = tkinter.Tk() #initialize main window
 
