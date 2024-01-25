@@ -1,7 +1,7 @@
 def validate(val):
 
     try:
-        _temp = int(val)
+        _temp = float(val)
     except ValueError:
         return False
 

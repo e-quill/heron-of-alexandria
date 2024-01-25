@@ -8,7 +8,7 @@ def clear():
     height_entry.delete(0, "end")
     
 def show_dialog():
-    area = logic.area_of_triangle(int(base_entry.get()),int(height_entry.get()))
+    area = logic.area_of_triangle(float(base_entry.get()),float(height_entry.get()))
 
     if area is not None:
         messagebox.showinfo("Area",f"The Area of the Triangle is {area} units.")
