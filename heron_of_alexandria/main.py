@@ -1,16 +1,8 @@
 import tkinter 
 import logic
 from tkinter import messagebox
-    
+
 def show_dialog():
-  numbers = "0123456789"
-  for character in base_entry.get():
-    if character not in numbers:
-      messagebox.showerror("Error", "Input not in integers.")
-  for character in height_entry.get():
-    if character not in numbers:
-      messagebox.showerror("Error", "Input not in integers.")
-  
   area = logic.area_of_triangle(int(base_entry.get()),int(height_entry.get()))
   messagebox.showinfo("Area",f"The Area of the Triangle is {area} units.")
   
