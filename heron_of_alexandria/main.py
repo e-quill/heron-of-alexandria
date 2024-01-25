@@ -1,6 +1,7 @@
 import tkinter 
-import logic
 from tkinter import messagebox
+
+import logic
     
 def show_dialog():
     area = logic.area_of_triangle(int(base_entry.get()),int(height_entry.get()))
