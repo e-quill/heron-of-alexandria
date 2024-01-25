@@ -2,6 +2,10 @@ import tkinter
 from tkinter import messagebox
 
 import logic
+
+def clear():
+    base_entry.delete(0, "end")
+    height_entry.delete(0, "end")
     
 def show_dialog():
     area = logic.area_of_triangle(int(base_entry.get()),int(height_entry.get()))
