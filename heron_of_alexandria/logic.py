@@ -1,7 +1,7 @@
 def validate(val):
 
     try:
-        _temp = float(val)
+        val = float(val)
     except ValueError:
         return False
 
@@ -11,5 +11,5 @@ def validate(val):
 
 def area_of_triangle(base, height):
     if validate(base) and validate(height):
-        return (1/2 * base * height)
+        return (1/2 * float(base) * float(height))
 
