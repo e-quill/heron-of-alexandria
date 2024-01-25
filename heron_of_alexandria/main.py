@@ -7,13 +7,13 @@ def clear():
     height_entry.delete(0, "end")
 
 def show_dialog():
-    area = logic.area_of_triangle(float(base_entry.get()),float(height_entry.get()))
+    area = logic.area_of_triangle(base_entry.get(),height_entry.get())
 
     if area is not None:
         messagebox.showinfo("Area",f"The Area of the Triangle is {area} units.")
         clear()
     else:
-        messagebox.showinfo("Invalid input.")
+        messagebox.showinfo("Area", "Invalid input.")
   
 mw = tkinter.Tk() #initialize main window
 
